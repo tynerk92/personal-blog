@@ -68,7 +68,8 @@ export default {
     // or any other url you want to post the form data to
     mailchimp: {
       on: true,
-      formAction: 'https://gmail.us20.list-manage.com/subscribe/post'
+      formAction:
+        'https://gmail.us20.list-manage.com/subscribe/post?u=91ed523fa0056209381275c57&amp;id=308061a045'
     },
     custom: {
       on: false,
