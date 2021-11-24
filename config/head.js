@@ -17,8 +17,9 @@ export default {
       id: 'netlify-identity-widget-script'
     },
     {
-      src: '/mailchimp.js',
-      id: 'mcjs'
+      src:
+        'https://chimpstatic.com/mcjs-connected/js/users/91ed523fa0056209381275c57/bba8fad950ce060f6ba733791.js',
+      async: true
     }
   ]
 }
