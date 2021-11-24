@@ -18,7 +18,7 @@ export default {
     },
     {
       src: '/mailchimp.js',
-      id: 'mailchimp-connect'
+      id: 'mcjs'
     }
   ]
 }
