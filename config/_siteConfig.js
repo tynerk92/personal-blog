@@ -29,12 +29,12 @@ export default {
     {
       name: 'Categories',
       link: '/categories'
-    },
-    {
-      name: 'Awake+ Premium',
-      link: 'https://awake-premium-lp.netlify.com/',
-      target: '_blank'
     }
+    // {
+    //   name: 'Awake+ Premium',
+    //   link: 'https://awake-premium-lp.netlify.com/',
+    //   target: '_blank'
+    // }
   ],
   hero: {
     theme: 'dark' // options: mist, light, dark
