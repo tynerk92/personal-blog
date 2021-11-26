@@ -83,5 +83,9 @@ export default {
       animation: fadeOut 0.3s ease;
     }
   }
+  .modal-card-body {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
 }
 </style>
