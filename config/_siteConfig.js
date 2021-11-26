@@ -10,7 +10,7 @@ import theCMS from '../cms/netlify/cms'
  */
 export default {
   siteName: 'Kylon Tyner',
-  tagline: '',
+  tagline: "Let's help each other become the best we can be",
   featureImage: '/uploads/home-hero.jpg',
   logo: 'logo-component', // 'logo-component', // or '/logo.svg' for regular image
   googleAnalytics: {
@@ -56,13 +56,13 @@ export default {
   disqus: {
     on: true,
     loadingStrategy: 'button', // Options: onload, lazy, button
-    siteShortName: 'kylontyner-com' // 'blog-danielkelly-io'
+    siteShortName: 'kylontyner' // 'blog-danielkelly-io'
   },
 
   // Newsletter Subscribe
   newsletter: {
     on: true,
-    heading: 'Subscribe to Our Newsletter',
+    heading: 'Subscribe to My Newsletter',
     btnText: 'Subscribe',
     // Can be the form action on a mail chimp form, a hubspot form,
     // or any other url you want to post the form data to

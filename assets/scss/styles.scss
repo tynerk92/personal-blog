@@ -1,9 +1,19 @@
-@import "vars";
-@import "layout";
-@import "animations";
-@import "transitions";
-@import "util";
+@import 'vars';
+@import 'layout';
+@import 'animations';
+@import 'transitions';
+@import 'util';
+@import 'fonts';
 // Import Bulma and Buefy styles
-@import "~bulma";
-@import "~buefy/src/scss/buefy";
+@import '~bulma';
+@import '~buefy/src/scss/buefy';
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-secondary {
+  font-family: $family-secondary;
+}
