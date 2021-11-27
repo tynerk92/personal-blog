@@ -58,4 +58,8 @@ export default {
     max-height: 32px;
   }
 }
+.all-categories {
+  position: sticky;
+  top: 92px;
+}
 </style>
