@@ -1,5 +1,6 @@
 <template>
-  <form name="contact" method="POST" data-netlify="true">
+  <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+    <div data-netlify-recaptcha="true"></div>
     <!-- Name -->
     <div class="field">
       <label class="label is-medium">Name</label>
