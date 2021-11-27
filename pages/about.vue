@@ -18,6 +18,11 @@
             quote="If you want to lift yourself up, lift up someone else."
             author="Booker T. Washington"
           />
+          <p>
+            You may notice that many of my posts are short, easy-to-follow, and
+            straight to the point. That's because I don't care about SEO
+            optimization, I just want to put out great content to help others.
+          </p>
         </div>
       </template>
 
