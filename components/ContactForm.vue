@@ -3,8 +3,11 @@
     name="contact"
     method="POST"
     data-netlify="true"
-    data-netlify-recaptcha="true"
+    netlify-honeypot="true"
   >
+    <div class="hidden">
+      <input name="demographics" />
+    </div>
     <!-- Name -->
     <div class="field">
       <label class="label is-medium">Name</label>
@@ -62,7 +65,6 @@
         ></textarea>
       </div>
     </div>
-    <div data-netlify-recaptcha="true"></div>
     <div class="control">
       <button class="button is-primary">
         Contact Us
