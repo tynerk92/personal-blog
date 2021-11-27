@@ -1,10 +1,23 @@
 <template>
-  <form>
+  <form
+    name="contact"
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="true"
+  >
+    <div class="hidden">
+      <input name="demographics" />
+    </div>
     <!-- Name -->
     <div class="field">
       <label class="label is-medium">Name</label>
       <div class="control has-icons-left">
-        <input class="input is-medium" type="text" placeholder="John Smith" />
+        <input
+          class="input is-medium"
+          type="text"
+          placeholder="John Smith"
+          name="name"
+        />
         <span class="icon is-small is-left">
           <font-awesome-icon icon="user" />
         </span>
@@ -18,6 +31,7 @@
           class="input is-medium"
           type="email"
           placeholder="you@email.com"
+          name="email"
         />
         <span class="icon is-small is-left">
           <font-awesome-icon icon="envelope" />
@@ -32,6 +46,7 @@
           class="input is-medium"
           type="text"
           placeholder="Brief Summary"
+          name="subject"
         />
         <span class="icon is-small is-left">
           <font-awesome-icon icon="briefcase" />
@@ -46,6 +61,7 @@
           class="textarea"
           placeholder="Detailed description of your comment, request, etc"
           rows="8"
+          name="message"
         ></textarea>
       </div>
     </div>
