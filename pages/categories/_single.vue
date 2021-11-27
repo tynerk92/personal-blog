@@ -11,39 +11,21 @@
         <posts-grid :category="[$store.state.name]" :per-row="2" />
       </template>
       <template v-slot:sidebar>
-        <h3 class="subtitle">
-          All Categories
-        </h3>
-        <div class="panel">
-          <nuxt-link
-            v-for="cat in allCats"
-            :key="cat.slug"
-            :to="`/categories/${cat.slug}`"
-            :class="{
-              'panel-block': true,
-              'is-active': cat.slug === $route.params.single
-            }"
-          >
-            {{ cat.name }}
-          </nuxt-link>
-        </div>
+        <all-categories />
       </template>
     </main-section>
   </div>
 </template>
 <script>
 import { setPageData } from '../../helper'
+import AllCategories from '~/components/categories/AllCategories'
+
 export default {
-  data() {
-    return {
-      allCats: []
-    }
+  components: {
+    AllCategories
   },
   fetch({ store, params }) {
     setPageData(store, { resource: 'category', slug: params.single })
-  },
-  async created() {
-    this.allCats = await this.$cms.category.getAll()
   }
 }
 </script>

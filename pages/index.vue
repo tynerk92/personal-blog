@@ -9,13 +9,14 @@
         Subscribe To Newsletter
       </button>
     </site-hero>
-    <main-section theme="one-column">
+    <main-section theme="sidebar-right">
       <template v-slot:default>
         <!-- All Posts -->
-        <posts-grid />
+        <h1>Latest Posts</h1>
+        <posts-grid :per-row="2" />
       </template>
       <template v-slot:sidebar>
-        Nothing here
+        <all-categories />
       </template>
     </main-section>
     <news-letter-form-modal />
@@ -26,22 +27,32 @@
 import { mapState } from 'vuex'
 import { setPageData } from '../helper'
 import NewsLetterFormModal from '~/components/NewsLetterFormModal'
+import AllCategories from '~/components/categories/AllCategories'
 
 export default {
   name: 'HomePage',
   head() {
     return {
-      title: `Home | ${this.$siteConfig.siteName}`
+      title: `Blog | ${this.$siteConfig.siteName}`
     }
   },
   components: {
-    NewsLetterFormModal
+    NewsLetterFormModal,
+    AllCategories
+  },
+  data() {
+    return {
+      allCats: []
+    }
   },
   computed: {
     ...mapState(['title', 'subtitle', 'featureImage'])
   },
   fetch({ store, params }) {
-    setPageData(store, { slug: 'home' })
+    setPageData(store, { slug: 'blog' })
+  },
+  async created() {
+    this.allCats = await this.$cms.category.getAll()
   }
 }
 </script>
@@ -49,5 +60,10 @@ export default {
 <style>
 .home-page .under-subtitle {
   border-top: none;
+}
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 1em;
 }
 </style>
