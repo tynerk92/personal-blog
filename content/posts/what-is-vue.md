@@ -5,7 +5,7 @@ category:
   - Vue
 author: Kylon Tyner
 date: 2021-11-27T20:19:57.898Z
-featureImage: https://3lhowb48prep40031529g5yj-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/logo-vuejs-min.png
+featureImage: /uploads/logo-vuejs-min.png
 ---
 ## What Is Vue?
 
