@@ -1,7 +1,7 @@
 <template>
   <div class="all-categories">
     <h3 class="subtitle">
-      All Categories
+      Choose a Topic
     </h3>
     <div class="panel">
       <nuxt-link
@@ -13,11 +13,19 @@
           'is-active': cat.slug === $route.params.single
         }"
       >
-        {{ cat.name }}
+        <span class="category-button">
+          <span>{{ cat.name }}</span>
+          <img v-if="cat.icon" :src="cat.icon" />
+        </span>
       </nuxt-link>
-      <button class="button is-primary" :to="'/categories'" nuxt>
+      <a
+        class="button is-primary"
+        :href="'/categories'"
+        :to="'/categories'"
+        nuxt
+      >
         See More
-      </button>
+      </a>
     </div>
   </div>
 </template>
@@ -35,8 +43,19 @@ export default {
 }
 </script>
 
-<style>
-.panel button {
+<style lang="scss">
+.panel .button {
   margin: 20px 0;
+}
+.category-button {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    max-width: 32px;
+    max-height: 32px;
+  }
 }
 </style>

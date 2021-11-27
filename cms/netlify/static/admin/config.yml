@@ -31,3 +31,4 @@ collections:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Icon", name: "icon", widget: "image"}
