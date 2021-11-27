@@ -5,7 +5,7 @@ category:
   - Vue
 author: Kylon Tyner
 date: 2021-11-26T20:22:41.753Z
-featureImage: https://3lhowb48prep40031529g5yj-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/logo-vuejs-min.png
+featureImage: /uploads/logo-vuejs-min.png
 ---
 I would imagine if you're reading this, you probably already know what Vue.js is. If you don't, be sure to check out my article explaining [what it is and why you should use it](https://www.kylontyner.com/what-is-vue).
 
