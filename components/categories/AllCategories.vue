@@ -42,7 +42,7 @@ export default {
   },
   computed: {
     responsiveImage(path) {
-      if (path.indexOf('/uploads') === 0) {
+      if (path.startsWith('/uploads')) {
         return require(`~/assets${path}`)
       }
       return { src: path, srcSet: '' }
