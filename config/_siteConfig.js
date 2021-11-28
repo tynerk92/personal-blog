@@ -12,7 +12,7 @@ export default {
   siteName: 'Kylon Tyner',
   tagline: "Let's help each other become the best we can be",
   featureImage: '/uploads/home-hero.jpg',
-  logo: 'logo-component', // 'logo-component', // or '/logo.svg' for regular image
+  logo: '/uploads/site-logo.png', // 'logo-component', // or '/logo.svg' for regular image
   googleAnalytics: {
     on: true,
     id: process.env.GOOGLE_ANALYTICS_ID
@@ -29,10 +29,6 @@ export default {
     {
       name: 'Contact',
       link: '/contact'
-    },
-    {
-      name: 'Categories',
-      link: '/categories'
     }
     // {
     //   name: 'Awake+ Premium',
