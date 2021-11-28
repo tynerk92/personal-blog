@@ -40,12 +40,12 @@ export default {
   async created() {
     this.allCats = await this.$cms.category.getAll()
   },
-  computed: {
+  methods: {
     responsiveImage(path) {
       if (path.startsWith('/uploads')) {
         return require(`~/assets${path}`)
       }
-      return { src: path, srcSet: '' }
+      return path
     }
   }
 }
