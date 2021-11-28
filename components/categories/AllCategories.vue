@@ -15,7 +15,7 @@
       >
         <span class="category-button">
           <span>{{ cat.name }}</span>
-          <img v-if="cat.icon" :src="cat.icon" />
+          <img v-if="cat.icon" :src="responsiveImage(cat.icon)" />
         </span>
       </nuxt-link>
       <a
@@ -39,6 +39,14 @@ export default {
   },
   async created() {
     this.allCats = await this.$cms.category.getAll()
+  },
+  computed: {
+    responsiveImage(path) {
+      if (this.image.indexOf('/uploads') === 0) {
+        return require(`~/assets${path}`)
+      }
+      return { src: path, srcSet: '' }
+    }
   }
 }
 </script>
