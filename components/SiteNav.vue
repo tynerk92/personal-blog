@@ -9,7 +9,7 @@
         <site-logo v-if="$siteConfig.logo === 'logo-component'" />
         <img
           v-else
-          :src="$siteConfig.logo"
+          :src="require(`~/assets${$siteConfig.logo}`)"
           :alt="$siteConfig.siteName"
           class="logo"
         />
@@ -60,8 +60,13 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+nav {
+  height: 70px;
+}
 .navbar-item img {
-  max-height: 2rem;
+  max-height: 100%;
+  max-width: 54px;
+  border-radius: 54px;
 }
 .site-search-wrapper {
   transform: translateX(5px);

@@ -4,6 +4,7 @@ export const state = () => ({
   title: '',
   subtitle: '',
   featureImage: '',
+  logo: '',
   content: '',
   author: '',
   date: ''
@@ -35,6 +36,7 @@ function setOtherPageData(commit, siteConfig) {
   commit('set', {
     title: siteConfig.siteName,
     subtitle: siteConfig.tagline,
-    featureImage: siteConfig.featureImage
+    featureImage: siteConfig.featureImage,
+    logo: siteConfig.logo
   })
 }
