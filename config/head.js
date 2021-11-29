@@ -20,6 +20,14 @@ export default {
       src:
         'https://chimpstatic.com/mcjs-connected/js/users/91ed523fa0056209381275c57/bba8fad950ce060f6ba733791.js',
       async: true
+    },
+    {
+      src: 'https://www.googletagmanager.com/gtag/js?id=G-LPRF9TSRT8',
+      async: true
+    },
+    {
+      src: 'googleAnalytics.js',
+      id: 'google-analytics'
     }
   ]
 }
