@@ -1,5 +1,5 @@
 ---
-title: Create a Vue App In 4 Easy Steps
+title: Create a Vue3 App In 4 Easy Steps
 subtitle: Everything You Need To Get Started
 category:
   - Vue
