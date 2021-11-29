@@ -34,3 +34,24 @@ h6,
   visibility: hidden;
   height: 0px;
 }
+
+pre.hljs {
+  overflow: visible;
+  position: relative;
+
+  code {
+    font-family: 'Source Code Pro', sans-serif;
+    font-size: 1.2rem;
+  }
+
+  &:before {
+    content: attr(data-lang);
+    position: absolute;
+    right: -1px;
+    top: -1em;
+    background-color: #2b2b2b;
+    border-radius: 4px;
+    border: 1px solid #2b2b2b;
+    padding: 0 0.5em;
+  }
+}

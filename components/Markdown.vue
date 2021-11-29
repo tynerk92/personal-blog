@@ -5,6 +5,7 @@
 <script>
 import MarkdownIt from 'markdown-it'
 import VRuntimeTemplate from 'v-runtime-template'
+import 'highlight.js/styles/a11y-dark.css'
 
 export default {
   name: 'Markdown',
@@ -15,9 +16,25 @@ export default {
   },
   computed: {
     content() {
+      const hljs = require('highlight.js')
       const md = new MarkdownIt({
         linkify: true,
-        typographer: true
+        typographer: true,
+        highlight: (str, lang) => {
+          if (lang && hljs.getLanguage(lang)) {
+            try {
+              return (
+                '<pre class="hljs" data-lang="' +
+                lang +
+                '"><code>' +
+                hljs.highlight(str, { language: lang }).value +
+                '</code></pre>'
+              )
+            } catch (__) {}
+          }
+
+          return ''
+        }
       })
         .use(require('markdown-it-deflist'))
         .use(require('markdown-it-sub'))
