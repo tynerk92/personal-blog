@@ -1,5 +1,5 @@
 ---
-title: Create a Vue App In 3 Easy Steps
+title: Create a Vue App In 4 Easy Steps
 subtitle: Everything You Need To Get Started
 category:
   - Vue
@@ -9,7 +9,18 @@ featureImage: /uploads/logo-vuejs-min.png
 ---
 I would imagine if you're reading this, you probably already know what Vue.js is. If you don't, be sure to check out my article explaining [what it is and why you should use it](https://www.kylontyner.com/what-is-vue).
 
-## 1. Install Vue CLI
+## 1. Install Node/NPM
+
+[Go here to install Node](https://nodejs.org/en/download/). After completing the installation wizard, open a new terminal (command prompt / powershell) and use these commands to verify that node and NPM are installed on your system.
+
+```
+node -v
+npm -v
+```
+
+If the console outputs a version number, you have successfully installed Node and NPM! If it doesn't, try running the installer again.
+
+## 2. Install Vue CLI
 
 In order to make things easier, let's install the Vue CLI node package. The `-g` flag tells npm to install this package globally on your system.
 
@@ -17,7 +28,7 @@ In order to make things easier, let's install the Vue CLI node package. The `-g`
 npm install -g @vue/cli
 ```
 
-## 2. Generate Project
+## 3. Generate Project
 
 Once that is installed, we can very easily create a new Vue app. Let's create one called `my-first-vue-app`
 
@@ -37,7 +48,7 @@ Here are the specific features that I selected.
 
 ![Specific Features Selected are: "Vue Version 3.x", "Class-style syntax: No", "Babel: Yes", "CSS pre-processor: node-sass", "Linter/Formatter: Prettier", "Lint on save", "In dedicated config files"](/uploads/vue-create-3.png "Vue Project Features")
 
-## 3. Serve The App
+## 4. Serve The App
 
 Great! Now that we've configured the app and let Vue CLI generate the project for us, we are ready to serve the app locally to see what it looks like. By default, vue generates an npm script called "serve" that we can use.
 
