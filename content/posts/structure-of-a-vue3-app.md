@@ -5,7 +5,7 @@ category:
   - Vue
 author: Kylon Tyner
 date: 2021-11-27T19:58:00.117Z
-featureImage: /uploads/logo-vuejs-min.png
+featureImage: /uploads/vue.png
 ---
 If you haven't already, go read my guide on [setting up a Vue3 App](https://www.kylontyner.com/create-a-vue-app-in-4-easy-steps). Once that is done, you're ready to dive in!
 
