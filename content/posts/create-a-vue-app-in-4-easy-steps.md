@@ -5,7 +5,7 @@ category:
   - Vue
 author: Kylon Tyner
 date: 2021-11-29T22:04:24.371Z
-featureImage: /uploads/logo-vuejs-min.png
+featureImage: /uploads/vue.png
 ---
 I would imagine if you're reading this, you probably already know what Vue.js is. If you don't, be sure to check out my article explaining [what it is and why you should use it](https://www.kylontyner.com/what-is-vue).
 
