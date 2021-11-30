@@ -52,9 +52,39 @@ if (process.env.NODE_ENV === 'production') {
           'tr',
           'tbody',
           'thead',
-          'tfoot'
+          'tfoot',
+          'hljs',
+          'hljs-comment',
+          'hljs-quote',
+          'hljs-deletion',
+          'hljs-name',
+          'hljs-regexp',
+          'hljs-selector-class',
+          'hljs-selector-id',
+          'hljs-tag',
+          'hljs-template-variable',
+          'hljs-variable',
+          'hljs-built_in',
+          'hljs-link',
+          'hljs-literal',
+          'hljs-meta',
+          'hljs-number',
+          'hljs-params',
+          'hljs-type',
+          'hljs-attribute',
+          'hljs-addition',
+          'hljs-bullet',
+          'hljs-string',
+          'hljs-symbol',
+          'hljs-section',
+          'hljs-title',
+          'hljs-keyword',
+          'hljs-selector-tag',
+          'hljs-emphasis',
+          'hljs-strong'
         ],
-        whitelistPatterns: [/theme/g, /spinner-position/, /fa/, /table/g]
+        whitelistPatterns: [/theme/g, /spinner-position/, /fa/, /table/g/*, /hljs([a-z_-]*)/g*/]
+        // whitelistPatternsChildren: [/hljs([a-z_-]*)/g]
       })
     ]
   }

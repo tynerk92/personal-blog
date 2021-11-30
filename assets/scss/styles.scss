@@ -4,9 +4,14 @@
 @import 'transitions';
 @import 'util';
 @import 'fonts';
+
+// Highlight.js
+@import '~highlight.js/scss/a11y-dark';
+
 // Import Bulma and Buefy styles
 @import '~bulma';
 @import '~buefy/src/scss/buefy';
+
 
 h1,
 h2,
@@ -19,13 +24,8 @@ h6,
 }
 
 .content {
-  pre, img {
-    border-radius: 6px;
-  }
-  pre {
-    border: 1px solid rgba(0, 0, 0, 0.3);
-  }
   img {
+    border-radius: 6px;
     box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
   }
 }
@@ -35,23 +35,27 @@ h6,
   height: 0px;
 }
 
-pre.hljs {
+.content pre {
   overflow: visible;
   position: relative;
-
-  code {
-    font-family: 'Source Code Pro', sans-serif;
-    font-size: 1.2rem;
-  }
+  background: transparent;
+  border: none;
+  padding: 1.25em 0 0 0;
 
   &:before {
     content: attr(data-lang);
     position: absolute;
-    right: -1px;
-    top: -1em;
+    right: 0;
+    top: 0;
     background-color: #2b2b2b;
     border-radius: 4px;
     border: 1px solid #2b2b2b;
     padding: 0 0.5em;
+    color: white;
+  }
+
+  code.hljs {
+    font-family: 'Source Code Pro', sans-serif;
+    font-size: 1.2rem;
   }
 }
