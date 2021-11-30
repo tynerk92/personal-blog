@@ -13,7 +13,7 @@ I would imagine if you're reading this, you probably already know what Vue.js is
 
 [Go here to install Node](https://nodejs.org/en/download/). After completing the installation wizard, open a new terminal (command prompt / powershell) and use these commands to verify that node and NPM are installed on your system.
 
-```
+```shell
 node -v
 npm -v
 ```
