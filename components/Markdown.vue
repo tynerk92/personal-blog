@@ -5,7 +5,7 @@
 <script>
 import MarkdownIt from 'markdown-it'
 import VRuntimeTemplate from 'v-runtime-template'
-import 'highlight.js/styles/a11y-dark.css'
+// import 'highlight.js/styles/a11y-dark.css'
 
 export default {
   name: 'Markdown',
@@ -24,9 +24,9 @@ export default {
           if (lang && hljs.getLanguage(lang)) {
             try {
               return (
-                '<pre class="hljs" data-lang="' +
+                '<pre data-lang="' +
                 lang +
-                '"><code>' +
+                '"><code class="hljs">' +
                 hljs.highlight(str, { language: lang }).value +
                 '</code></pre>'
               )
