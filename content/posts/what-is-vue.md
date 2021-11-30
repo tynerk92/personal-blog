@@ -5,7 +5,7 @@ category:
   - Vue
 author: Kylon Tyner
 date: 2021-11-26T20:19:57.898Z
-featureImage: /uploads/custom-size-–-1.png
+featureImage: /uploads/vue.png
 ---
 ## What Is Vue?
 
