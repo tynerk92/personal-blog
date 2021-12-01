@@ -3,6 +3,7 @@
     :title="title"
     :image="image"
     :link="link"
+    :number="number"
     :image-dimensions="
       $siteConfig.posts.imageDimensions ||
         $siteConfig.cards.imageDimensions ||
@@ -46,6 +47,10 @@ export default {
     author: {
       type: String,
       default: ''
+    },
+    number: {
+      type: Number,
+      default: 0
     }
   },
   computed: {

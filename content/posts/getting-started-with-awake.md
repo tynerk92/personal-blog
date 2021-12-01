@@ -6,8 +6,9 @@ category:
 author: Daniel Kelly
 date: 2019-08-03T19:59:59.000Z
 featureImage: /uploads/getting-started-hero.jpg
+number: 3
 ---
-Awake is a Nuxt.js template for generating a beautifully robust static site with blog. 
+Awake is a Nuxt.js template for generating a beautifully robust static site with blog.
 
 # Features
 
@@ -40,7 +41,7 @@ googleAnalytics: {
 
 # Editing Content
 
-Posts and categories can be edited in Netlify CMS at \[your-site-url]/admin. At this time any new pages must be created in the code itself and committed to the repo. Before you visit the admin for the first time, make sure you have [Netlify Identity](https://www.netlify.com/docs/identity/) setup with your user and make sure "Git Gateway" is enabled via the Identity Settings page in the Netlify admin. 
+Posts and categories can be edited in Netlify CMS at \[your-site-url]/admin. At this time any new pages must be created in the code itself and committed to the repo. Before you visit the admin for the first time, make sure you have [Netlify Identity](https://www.netlify.com/docs/identity/) setup with your user and make sure "Git Gateway" is enabled via the Identity Settings page in the Netlify admin.
 
 # Local Development
 

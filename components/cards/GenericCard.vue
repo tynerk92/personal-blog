@@ -12,6 +12,7 @@
             :sizes="`(min-width: 768px) ${100 / $siteConfig.posts.perRow}vw`"
           />
           <loading-spinner position="absolute" />
+          <span v-if="number" class="post-number">#{{ number }}</span>
         </figure>
       </component>
     </div>
@@ -51,7 +52,8 @@ export default {
     title: { type: String, default: '' },
     image: { type: String, default: '' },
     link: { type: String, default: '' },
-    imageDimensions: { type: String, default: imageDimensionDefault }
+    imageDimensions: { type: String, default: imageDimensionDefault },
+    number: { type: Number, default: 0 }
   },
   computed: {
     imageRatioClass() {
@@ -99,6 +101,19 @@ export default {
   &.subtitle {
     width: 70%;
   }
+}
+.post-number {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 48px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: white;
+  filter: drop-shadow(0px 0px 3px #000000);
+  -webkit-filter: drop-shadow(0px 0px 3px #000000);
+  -moz-filter: drop-shadow(0px 0px 3px #000000);
+  line-height: 0.8;
 }
 </style>
 <style lang="scss">
