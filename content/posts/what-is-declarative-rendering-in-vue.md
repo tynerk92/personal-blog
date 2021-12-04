@@ -49,27 +49,4 @@ Here is the same example as above using declarative rendering in a Vue app.
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-```html
-<div id="counter">
-  Counter: {{ counter }}
-</div>
-
-<script>
-  const Counter = {
-    data() {
-      return {
-        counter: 0
-      }
-    },
-    mounted() {
-      setInterval(() => {
-        this.counter++
-      }, 1000)
-    }
-  }
-  
-  Vue.createApp(Counter).mount('#counter')
-</script>
-```
-
 In this example, every 1000ms (or 1 second), we are increasing the counter. Because of Vue's reactivity system, it knows to update the DOM with the new value. The reactivity system adds a layer of abstraction so that we no longer have to worry about **how** to render, we just have to tell Vue **what** to render.
