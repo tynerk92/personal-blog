@@ -4,7 +4,7 @@ subtitle: Core Vue Concepts
 category:
   - Vue
 author: Kylon Tyner
-date: 2021-11-30T19:58:00.117Z
+date: 2021-12-22T15:31:00.117Z
 featureImage: /uploads/vue.png
 number: 4
 ---

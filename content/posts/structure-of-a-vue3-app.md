@@ -14,7 +14,7 @@ If you haven't already, go read my guide on [setting up a Vue3 App](https://www.
 
 Open your favorite code editor or IDE (I like [VSCode](https://code.visualstudio.com/) and [Atom](https://atom.io/)). If you open the directory where you created the Vue app (`my-first-vue-app` if you followed my first guide), you will see a directory tree like this.
 
-![](/uploads/directory-tree.png "Vue3 Application Default Directory Tree")
+![Directory Structure of a Vue Application](/uploads/directory-tree.png)
 
 Take a look at the file `my-first-vue-app/src/main.ts`.
 
