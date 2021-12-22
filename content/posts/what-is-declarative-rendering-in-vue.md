@@ -20,10 +20,10 @@ Traditional JavaScript uses imperative rendering techniques in order to manipula
 <div id="counter"></div>
 
 <script>
-  let counter = 0;
+  let count = 0;
   
   setInterval(() => {
-    this.counter++
+    this.count++
     updateDOM()
   }, 1000)
   
@@ -40,6 +40,27 @@ Here, we have to actually change the contents of the #counter div. In this examp
 
 With declarative rendering, it is the data the determines how the DOM is rendered. Web frameworks, such as Vue, allow us to render the DOM declaratively. We provide the data, and let the framework determine what it needs to do in order to display that data correctly.
 
-Here is the same example as above using declarative rendering in a Vue app.
+Here is the same example as above using declarative rendering in a Vue app. [](https://codepen.io/tynerk92/pen/GRMMrJK)
+
+[View the CodePen here](https://codepen.io/tynerk92/pen/GRMMrJK)
+
+```html
+<div>
+  Counter: {{ count }}
+</div>
+
+<script>
+  export default {
+    data() {
+      return {
+        count: 0
+      }
+    },
+    created() {
+      setInterval(() => this.count++, 1000)
+    }
+  }
+</script>
+```
 
 In this example, every 1000ms (or 1 second), we are increasing the counter. Because of Vue's reactivity system, it knows to update the DOM with the new value. The reactivity system adds a layer of abstraction so that we no longer have to worry about **how** to render, we just have to tell Vue **what** to render.
