@@ -11,7 +11,7 @@ import theCMS from '../cms/netlify/cms'
 export default {
   siteName: 'Kylon Tyner',
   tagline: "Let's help each other become the best we can be",
-  featureImage: '/uploads/home-hero.jpg',
+  featureImage: '/uploads/home-hero.png',
   logo: '/uploads/site-logo.png', // 'logo-component', // or '/logo.svg' for regular image
   googleAnalytics: {
     on: true,
