@@ -64,14 +64,24 @@ This can be useful for overriding default browser event handlers. I've found it 
 
 ### Chaining Modifiers
 
-Modifiers can be used together to form a Modifier Chain.
-
-This will stop the event from propagating to child elements, and also prevent any default click events.
+Modifiers can be used together to form a Modifier Chain. Sometimes, the order of the chain can drastically change the outcome.
 
 ```html
+<!-- Order does not matter -->
 <div @click.stop.prevent="doSomething"></div>
+
+<!-- 
+  This prevents ALL click events, even from child elements
+-->
+<div @click.prevent.self="doSomething"></div>
+
+<!-- This only prevents clicks that happen on this element -->
+<div @click.self.prevent="doSomething"></div>
 ```
 
 ## Mouse Input Examples
 
-@\[codepen](RwLLVEd, Vue Click Event Handling)
+@[codepen](RwLLVEd, Vue Click Event Handling)
+
+## Keyboard Input Examples
+@[codepen](NWaagap, Vue Keyboard Event Handling)
